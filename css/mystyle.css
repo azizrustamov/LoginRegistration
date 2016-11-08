@@ -1,0 +1,106 @@
+#container{
+    font-family: Arial;
+    font-size: 12px;
+}
+
+#form1 label{
+    display: block;
+    color: #797979;
+}
+
+#form1 input{
+    width: 220px;
+    padding: 6px;
+    color: #949494;
+    font-family: Arial;
+    font-size: 12px;
+    border: 1px solid #cecece;
+}
+
+#form1 div{
+    margin-bottom: 10px;
+}
+
+#form1 #voyti{
+    background: #6f9ff1;
+    color: #fff;
+    width: 234px;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#form1 #voyti:hover{
+    background: #79a7f1;
+}
+
+#container >div> a{
+    color: black;
+    text-decoration: none;
+}
+
+#container >div> a:hover{
+    color: blue;
+} 
+
+#container div span{
+    font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+    color: #797979;
+    margin-left: 10px;
+    }
+#form2 label{
+    display: block;
+    color: #797979;
+}
+
+#form2 div{
+    margin-bottom: 10px;
+}
+
+#form2 input{
+    width: 220px;
+    padding: 6px;
+    color: #949494;
+    font-family: Arial;
+    font-size: 12px;
+    border: 1px solid #cecece;
+}
+
+#form2 #registration{
+    background: #6f9ff1;
+    color: #fff;
+    //width: 234px;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#form2 #registration:hover{
+    background: #79a7f1;
+}
+
+#form2 div span.error{
+    color:red;
+}
+
+#form2 div span.valid{
+    color:green;
+}
+
+#form1 div span.error{
+    color:red;
+}
+
+#form1 div span.valid{
+    color:green;
+}
+
+#reg{
+    
+    font-family: Themes;
+    font-size: 40px;
+    color: #27408B;
+    margin: 10px 0px 10px 0px;
+}
