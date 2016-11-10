@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <?php
 if (isset($_GET['login'])) {
     $user = $_GET['login'];
-    
-    echo "Welcome $user";
 }
 ?>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+        <meta charset="UTF-8">
+
+        <title>Добро пожаловать</title>
+    </head>
+    <body>
+        <h1>Добро пожаловать <?php echo $user ?></h1>
+        <br />
+
+        <div id="logout">
+            <a href="index.php">Выйти</a>
+        </div>
+    </body>
+</html>

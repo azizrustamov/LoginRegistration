@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        
+
         <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="js/login.js"></script>
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
@@ -15,7 +15,13 @@ and open the template in the editor.
     </head>
     <body>
         <div id="container">
-            <form id="form1">
+
+            <div>
+                <div id="reg1">Войти</div>
+                <span id="logError"></span>
+            </div>
+            
+            <form id="form1"> 
 
                 <div>
                     <label for="login">Логин</label>
@@ -30,15 +36,15 @@ and open the template in the editor.
                 </div>
 
                 <div>
-                    <input id="enter" name="voyti" type="button" value="Войти">
+                    <input id="enter" name="enter" type="button" value="Войти">
                 </div>
 
             </form>
-            
+
             <div>
                 <a href="registration.php">Регистрация</a>
             </div>
-            
+
         </div>
     </body>
 </html>

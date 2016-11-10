@@ -1,3 +1,4 @@
+//jquery файл для формы входа
 
 $(document).ready(function() {
 
@@ -5,10 +6,12 @@ $(document).ready(function() {
     var loginInfo = $("#loginInfo");
     var pass = $("#pass");
     var passInfo = $("#passInfo");
+    var logError = $("#logError");
     var status = false;
 
 
-    $('#enter').click(function() {
+    $('#enter').click(function(e) {
+        //e.preventDefault();
         var ulogin = login.val();
         var upass = pass.val();
 
@@ -16,25 +19,40 @@ $(document).ready(function() {
 
             $.post('login.php', {logins: ulogin, passs: upass}, function(data) {
                 if (data != 1) {
-                    
-                    
                     window.location.replace("welcome.php?login="+ulogin+"");
-                    return true;
+                    
+                  
+                  return true;
                 } else {
-                    alert("логин или пароль неверный");
+                    e.preventDefault();
+                    logError.removeClass("valid");
+                    logError.addClass("error");
+                    logError.text("Неверный логин или пароль");
+                    
                     return false;
                 }
             });
-        } else {
+        } else if(ulogin=='' && upass==''){
             loginInfo.removeClass("valid");
             loginInfo.addClass("error");
+            loginInfo.text("Пожалуйста, введите Ваш логин");
+            
             passInfo.removeClass("valid");
             passInfo.addClass("error");
-
-            loginInfo.text("Пожалуйста, введите Ваш логин");
             passInfo.text("Пожалуйста, введите Ваш пароль");
             return false;
-
+        }else if(upass==''){
+            passInfo.removeClass("valid");
+            passInfo.addClass("error");
+            passInfo.text("Пожалуйста, введите Ваш пароль");
+            return false;
+        }
+        else{
+            loginInfo.removeClass("valid");
+            loginInfo.addClass("error");
+            loginInfo.text("Пожалуйста, введите Ваш логин");
+            
+            return false;
         }
     });
 

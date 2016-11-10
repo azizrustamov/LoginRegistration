@@ -1,5 +1,5 @@
 <?php
-
+//проверка логина и паролья пользователя при входе
 if (isset($_POST['logins']) && isset($_POST['passs'])) {
 
     $login = $_POST['logins'];
@@ -16,6 +16,7 @@ if (isset($_POST['logins']) && isset($_POST['passs'])) {
 
     if ($count1 != 0 && $count2!=0) {
         echo 0;
+                
     } else {
         echo 1;
     }

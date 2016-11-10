@@ -9,9 +9,10 @@
     </head>
     <body>
         
-        <div id="reg">Регистрация</div>
-        
-        <div id="container">
+        <div id="container1">
+            
+            <div id="reg">Регистрация</div>
+            
             <form id="form2">
 
                 <div>

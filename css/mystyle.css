@@ -1,4 +1,11 @@
 #container{
+    margin-left: 50px;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+#container1{
+    margin-left: 50px;
     font-family: Arial;
     font-size: 12px;
 }
@@ -15,13 +22,14 @@
     font-family: Arial;
     font-size: 12px;
     border: 1px solid #cecece;
+    margin-bottom: 10px;
 }
 
 #form1 div{
     margin-bottom: 10px;
 }
 
-#form1 #voyti{
+#form1 #enter{
     background: #6f9ff1;
     color: #fff;
     width: 234px;
@@ -30,7 +38,7 @@
     cursor: pointer;
 }
 
-#form1 #voyti:hover{
+#form1 #enter:hover{
     background: #79a7f1;
 }
 
@@ -39,17 +47,45 @@
     text-decoration: none;
 }
 
+#container1 >div> a{
+    color: black;
+    text-decoration: none;
+}
+
 #container >div> a:hover{
     color: blue;
 } 
+
+#container1 >div> a:hover{
+    color: blue;
+} 
+
+#logout > a{
+    color: black;
+    text-decoration: none;
+}
+
+#logout > a:hover{
+    color:blue;
+}
 
 #container div span{
     font-family: Arial;
     font-size: 12px;
     font-style: italic;
     color: #797979;
-    margin-left: 10px;
-    }
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+#container1 div span{
+    font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+    color: #797979;
+    margin-left: 0px;
+}
+
 #form2 label{
     display: block;
     color: #797979;
@@ -66,12 +102,12 @@
     font-family: Arial;
     font-size: 12px;
     border: 1px solid #cecece;
+    margin-right: 10px;    
 }
 
 #form2 #registration{
     background: #6f9ff1;
     color: #fff;
-    //width: 234px;
     font-weight: 700;
     font-style: normal;
     cursor: pointer;
@@ -97,10 +133,25 @@
     color:green;
 }
 
+#container div span.error{
+    color: red;
+}
+
 #reg{
+    font-family: Themes;
+    font-size: 40px;
+    color: #27408B;
+    margin: 10px 0px 10px 0px;
+}
+
+#reg1{
     
     font-family: Themes;
     font-size: 40px;
     color: #27408B;
     margin: 10px 0px 10px 0px;
+}
+
+#logError{
+    margin-bottom: 10px;
 }
